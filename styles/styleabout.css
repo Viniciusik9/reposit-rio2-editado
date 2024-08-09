@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Importa as fontes "Krona One" e "Montserrat" do Google Fonts */
+
+* /* o * faz com que se aplique as configurações abaixo em toda a página (reset) */
+{
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define o box-sizing como border-box */
+}
+
+:root {/* Paleta de Cores */
+    --cor-primaria: #d1cec3e3;
+    --cor-secundaria: #a70808;
+    --cor-terciaria: #462e13;
+    --cor-quartenaria: #000000;
+    --cor-quinquenaria: #fffae6ef;
+
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secundaria: "Krona One", sans-serif; 
+}
+
+body {
+    background-color: var(--cor-primaria); /* Define a cor de fundo do corpo da página */
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do corpo */
+    margin: 0; /* Remove a margem padrão */
+    color: var(--cor-secundaria); /* Define a cor da fonte */
+    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da tela */
+    display: flex; /* Define o layout do body como flexbox */
+    flex-direction: column; /* Organiza os filhos do body em uma coluna */
+}
+
+.cabecalho_menu /* Links do menu - tag a */
+{
+    text-decoration: none; /* Remove a decoração padrão dos links */
+    color: var(--cor-terciaria); /* Define a cor da fonte */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do corpo */
+    font-weight: 600; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+}
+
+.apresentacao_conteudo_texto /* Texto principal */
+{
+    font-size: 1.375rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do corpo */
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+    column-count: 2; /* Divide o texto em 2 colunas */
+    column-gap: 30px; /* Define o espaço entre as colunas */
+    margin-bottom: 20px; /* Adiciona margem inferior para dar espaço entre as colunas e o rodapé */
+    flex: 1; /* Permite que o conteúdo se expanda para ocupar o espaço disponível */
+}
+
+footer /* Rodapé */
+{
+    background-color: var(--cor-quartenaria); /* Define a cor de fundo do rodapé */
+    padding: 50px; /* Define o preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.375rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do corpo */
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+    color: var(--cor-primaria); /* Define a cor da fonte */
+}
